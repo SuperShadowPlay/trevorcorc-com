@@ -1,9 +1,18 @@
 # [trevorcorc.com](https://www.trevorcorc.com)
 
-A personal portfolio website build with Astro.
+A personal portfolio/blogging website built with Astro.
 
 ## Running
 
 * `npm run dev` - Open hot-reloading preview
 
 * `run run build` - Build for production
+
+## TODO
+
+- [x] Color scheme design
+- [x] About me bio
+- [ ] Portfolio (including porting over current website info)
+- [ ] Proper frontpage with interesting design (i.e. not just a markdown doc)
+- [ ] Blog frontpage organization (remove images, make more list like, show title, desc, and first few lines of post)
+- [ ] College cost cutting blog post
