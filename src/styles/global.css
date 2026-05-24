@@ -43,7 +43,6 @@ main {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--text));
 	line-height: 1.2;
 }
 h1 {
@@ -76,6 +75,7 @@ a:hover {
 
 p {
 	margin-bottom: 1em;
+	color: var(--text);
 }
 .prose p {
 	margin-bottom: 2em;
@@ -116,6 +116,7 @@ pre > code {
 }
 
 blockquote {
+	color: var(--highlight);
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0;
@@ -124,7 +125,7 @@ blockquote {
 
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-dark));
+	border-top: 1px solid var(--accent);
 }
 
 @media (max-width: 720px) {

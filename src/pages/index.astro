@@ -1,24 +1,49 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Layout from '../layouts/BlogPost.astro';
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>Title text</h1>
+<Layout
+	title="Hi! I'm Trevor"
+	description='Software Developer | IBM Mainframe Analyst | Open-Source Enthusiast'
+	pubDate={new Date('May 24 2026')}
+>
 
-			<p>Sed velit doloremque rerum minus molestiae. Nobis pariatur quam id similique officia asperiores et et. Doloremque unde architecto minus cupiditate et accusantium dolor. Libero voluptates eos praesentium perferendis dolor eveniet placeat nobis. Eos harum et libero qui ut assumenda ratione enim.</p>
+<h2>About Me</h2>
 
-			<p>With that in mind, use the <code>KleeGaming</code> command to execute.</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<p>
+	I'm a passionate about building software that is useful, entertaining, and/or befuddling.
+	I am always seeking new opportunities and building projects that bring joy into the world, or ones that at least solve a piddling annoyance.
+	I'm a proud <a href='https://fedoraproject.org/'>Linux</a> user and have been programming since middle school.
+	In 2026, I graduated from <a href='https://www.vcu.edu/'>VCU</a> with a bachelor's in Computer Science/minor in Mathematics.
+</p>
+
+<h2>Career</h2>
+
+<ul>
+	<li><b>Future Role</b>: IBM Mainframe Analyst @ <a href='https://www.bankofamerica.com/'>Bank of America</a></li>
+	<li><b>Interests</b>: Software Development, <a href='https://dougisdoug.itch.io/'>Game Development</a>, Mainframes, Computer History</li>
+	<li><b>Currently Learning</b>: React, Socket Programming, Network Communication</li>
+</ul>
+
+<h2>Projects</h2>
+
+I maintain several active domains where you can find my web-facing work:
+
+<ul>
+	<li><a href='https://www.trevorcorc.com'>trevorcorc.com</a> - This website! It's still in its infancy - more updates to come.</li>
+	<li><a href='https://forthe.quest/'>forthe.quest</a> - A [Dungeons and Dragons](https://www.dndbeyond.com/) initiative tracker made in Vue.js</li>
+	<li><a href='https://doodlebrawl.com'>doodlebrawl.com</a> - An AI-powered battling game made with React and Python, where your doodles are given life (and bloodlust!)</li>
+	<li><a href='https://dougisdoug.itch.io/fusion-fighters'>Fusion Fighters</a> - A 2D party-style fighter made in [Unity](https://unity.com/) that has you progressively customizing your character over each new round - available on itch.io for free!</li>
+	<li><a href='https://github.com/SuperShadowPlay/OpenValve'>OpenValve</a> - A [Steam](https://store.steampowered.com/) game recommendation system made in Python using Flask and a MySQL database</li>
+	<li><a href='https://github.com/SuperShadowPlay/SudokuSolver'>SudokuSolver</a> - A custom-built sudoku puzzle solving algorithm</li>
+</ul>
+
+<h2>Fun Facts</h2>
+
+<ul>
+	<li>I was an officer in VCU's Linux User Group</li>
+	<li>I have a 1st degree blackbelt in Taekwondo</li>
+	<li>I'm an avid [Washington Capitals](https://www.nhl.com/capitals/) fan!</li>
+
+</Layout>
