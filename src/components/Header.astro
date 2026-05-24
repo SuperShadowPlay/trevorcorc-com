@@ -29,7 +29,8 @@ import { Icon } from 'astro-icon/components';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
+		background: var(--surface);
+		color: var(--on-primary);
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
@@ -37,29 +38,40 @@ import { Icon } from 'astro-icon/components';
 		font-size: 1em;
 	}
 
-	h2 a,
-	h2 a.active {
+	h2 a, h2 a.active {
 		text-decoration: none;
 	}
+
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
+
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+
+	nav a:hover {
+		color: var(--primary);
+	}
+
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		border-bottom-color: var(--primary);
 	}
-	.social-links,
-	.social-links a {
+
+	.social-links, .social-links a {
 		display: flex;
 	}
+
+	.social-links a:hover {
+		color: var(--primary);
+	}
+
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;

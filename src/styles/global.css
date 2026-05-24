@@ -1,12 +1,17 @@
 /*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ * Color palette inspiration:
+ * https://coolors.co/2c4251-559cad-758e4f-e4fde1-a36d90
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	/* Site color palette */
+	--primary: #758e4f;  /* Brand */
+	--accent: #559cad;  /* Interaction */
+	--highlight: #a36d90;  /* Content Emphasis */
+	--text: #e4fde1; /* Text */
+	--background: #2c4251; /* Canvas */
+	--surface: #1e2f3a; /* Defines Structure */
+
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -21,11 +26,12 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	/*background: linear-gradient(var(--gray-gradient)) no-repeat; */
+	background: var(--background);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: var(--text);
 	font-size: 20px;
 	line-height: 1.7;
 }
@@ -42,7 +48,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: rgb(var(--text));
 	line-height: 1.2;
 }
 h1 {
@@ -68,7 +74,7 @@ a {
 	color: var(--accent);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--highlight);
 }
 p {
 	margin-bottom: 1em;
@@ -93,8 +99,9 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
+	color: var(--highlight);
+	background-color: rgb(var(--gray-dark));
+	border-radius: 4px;
 }
 pre {
 	padding: 1.5em;
@@ -111,7 +118,7 @@ blockquote {
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid rgb(var(--gray-dark));
 }
 @media (max-width: 720px) {
 	body {
