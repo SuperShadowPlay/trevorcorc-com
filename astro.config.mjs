@@ -12,26 +12,22 @@ export default defineConfig({
     integrations: [mdx(), sitemap(), icon()],
     fonts: [
         {
-            provider: fontProviders.local(),
-            name: 'Atkinson',
-            cssVariable: '--font-atkinson',
-            fallbacks: ['sans-serif'],
-            options: {
-                variants: [
-                    {
-                        src: ['./src/assets/fonts/atkinson-regular.woff'],
-                        weight: 400,
-                        style: 'normal',
-                        display: 'swap',
-                    },
-                    {
-                        src: ['./src/assets/fonts/atkinson-bold.woff'],
-                        weight: 700,
-                        style: 'normal',
-                        display: 'swap',
-                    },
-                ],
-            },
+            provider: fontProviders.google(),
+            name: 'Faustina',
+            cssVariable: '--font-heading',
+            fallbacks: ['Georgia', 'serif'],
+        },
+        {
+            provider: fontProviders.google(),
+            name: 'Vazirmatn',
+            cssVariable: '--font-body',
+            fallbacks: ['system-ui', 'sans-serif'],
+        },
+        {
+            provider: fontProviders.google(),
+            name: 'IBM Plex Mono',
+            cssVariable: '--font-mono',
+            fallbacks: ['Courier New', 'monospace'],
         },
     ],
 });

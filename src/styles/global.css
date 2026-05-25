@@ -22,11 +22,10 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 body {
-	font-family: var(--font-atkinson);
+	font-family: var(--font-body);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	/*background: linear-gradient(var(--gray-gradient)) no-repeat; */
 	background: var(--background);
 	background-size: 100% 600px;
 	word-wrap: break-word;
@@ -44,6 +43,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.5rem 0;
 	line-height: 1.2;
+	font-family: var(--font-heading);
 }
 h1 {
 	font-size: 3.052em;
@@ -105,6 +105,7 @@ code {
 	color: var(--highlight);
 	background-color: rgb(var(--gray-dark));
 	border-radius: 4px;
+	font-family: var(--font-mono);
 }
 
 pre {
