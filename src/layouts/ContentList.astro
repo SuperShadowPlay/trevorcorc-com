@@ -1,0 +1,141 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+interface Props {
+	contentDir: string;
+}
+
+// contentDir = 'blog' or 'projects'
+const { contentDir } = Astro.props;
+
+// Get content from the specified directory
+const posts = (await getCollection(contentDir)).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 60vw;
+			}
+
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				gap: 1.5rem;
+			}
+			ul li {
+				width: 45%;
+				transition: 0.2s ease;
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li:first-child {
+				width: 60vw;
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+			ul li:first-child .title {
+				font-size: 2.369rem;
+			}
+			ul li a {
+				display: block;
+			}
+
+			.title {
+				margin: 0;
+				margin-bottom: 15px;
+				color: var(--text);
+				line-height: 1;
+			}
+			a:hover .title {
+				color: var(--primary);
+			}
+
+			.date {
+				margin: 0;
+				color: var(--accent);
+			}
+
+			.description {
+				margin: 0;
+				margin-top: 5px;
+				color: var(--text-dark);
+			}
+
+
+			.card {
+				position: relative;
+				background-color: var(--surface);
+				border-radius: 8px;
+				padding: 1rem;
+				width: 200px;
+			}
+			.card:has(a:hover) {
+				box-shadow: var(--box-shadow);
+			}
+
+			@media (max-width: 720px) {
+				main {
+					width: 85vw;
+				}
+				ul {
+					gap: 0.5em;
+				}
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+				ul li:first-child {
+					margin-bottom: 0;
+				}
+				ul li:first-child .title {
+					font-size: 1.563em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<ul>
+					{
+						posts.map((post) => (
+							<li class="card">
+								<a href={`/blog/${post.id}/`}>
+									<h4 class="title">{post.data.title}</h4>
+									<hr/>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+									<p class="description">
+										{post.data.description}
+									</p>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
