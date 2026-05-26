@@ -30,12 +30,19 @@ body {
 	color: var(--text);
 	font-size: 20px;
 	line-height: 1.7;
+	
+	/* Fill entire page */
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
+	max-width: 60vw;
 	margin: auto;
 	padding: 3em 1em;
+
+	/* Fill entire page */
+	flex: 1;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.5rem 0;
