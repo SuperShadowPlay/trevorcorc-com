@@ -27,17 +27,18 @@ const posts = (await getCollection(contentDir)).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 60vw;
 			}
 
 			ul {
 				display: flex;
 				flex-wrap: wrap;
-				justify-content: space-between;
+				justify-content: space-around;
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
 				gap: 1.5rem;
+				min-width: 50vw;
+				max-width: 50em;
 			}
 			ul li {
 				width: 45%;
@@ -48,7 +49,7 @@ const posts = (await getCollection(contentDir)).sort(
 				transition: 0.2s ease;
 			}
 			ul li:first-child {
-				width: 60vw;
+				width: 100%;
 				margin-bottom: 1rem;
 				text-align: center;
 			}
@@ -97,13 +98,14 @@ const posts = (await getCollection(contentDir)).sort(
 					width: 85vw;
 				}
 				ul {
-					gap: 0.5em;
+					gap: 1.5em;
 				}
 				ul li {
 					width: 100%;
 					text-align: center;
 				}
 				ul li:first-child {
+					width: 100%;
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
