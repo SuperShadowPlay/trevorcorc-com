@@ -123,6 +123,14 @@ hr {
 	border-top: 2px solid var(--accent);
 }
 
+.footnotes {
+	font-size: 0.8em;
+	background-color: var(--surface);
+	border-top: 2px solid var(--highlight);
+	border-radius: 4px;
+	padding: 0.5em 1.5em 0.5em 1em;
+}
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
