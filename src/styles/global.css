@@ -81,9 +81,6 @@ p {
 	margin-bottom: 1em;
 	color: var(--text);
 }
-.prose p {
-	margin-bottom: 2em;
-}
 
 textarea {
 	width: 100%;
@@ -121,11 +118,15 @@ pre > code {
 }
 
 blockquote {
-	color: var(--highlight);
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
+	background-color: var(--surface);
+	border-left: 4px solid var(--highlight);
+	border-radius: 4px;
 	margin: 0;
-	font-size: 1.333em;
+	font-size: 1em;
+}
+blockquote p {
+	margin: 0;
+	padding: 0.5em 0.5em 0.5em 1em;
 }
 
 hr {
