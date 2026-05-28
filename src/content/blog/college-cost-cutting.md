@@ -17,7 +17,7 @@ ideas:
     7. bonus: books aren't actually a problem in my experience
 4. conclusion
 
-## Overview
+# Overview
 
 Despite the doom and gloom[^1] common among the current generation of students, **graduating college with no debt *is* possible**.
 I would know because I did it; graduating from [VCU](https://www.vcu.edu) in 2026 with a bachelor's in Computer Science with cash in the bank.
@@ -25,7 +25,7 @@ I'm no super hero, and my family isn't rich - so I'm certain you can too.
 
 # The Good Stuff
 
-(give advice here)
+## Living with family
 
 # Conclusion
 

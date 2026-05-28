@@ -33,6 +33,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 			}
 			.header h1 {
 				margin: 0 0 0.2em 0;
+				font-size: 3.052em;
 			}
 			.description {
 				line-height: 1.5em;
@@ -47,6 +48,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 				font-style: italic;
 				font-size: 0.8em;
 			}
+
 		</style>
 	</head>
 
@@ -74,7 +76,9 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 						</div>
 						<hr />
 					</div>
-					<slot />
+					<div class="body">
+						<slot />
+					</div>
 				</div>
 			</article>
 		</main>
