@@ -38,10 +38,28 @@ my cost-cutting was targeted at. So, let's take a look!
 
 ## Community College
 
-No shock here. In my experience, community college tuition was roughly *half* of my four-year university tuition. I paid roughly $5000k per academic
-year, compared to VCU's $10k/year for engineering students. Completing half **FINISH ME**
+No shock here. In my experience, community college tuition was roughly *half* of my four-year university tuition. I paid roughly $5k per academic
+year, compared to VCU's $10k/year for engineering students. Completing half of my education at community college saved me roughly $30k in tuition, but
+was not without its downsides:
 
-## Living with family
+- Community college has next to no student life. I joined a small club, but otherwise there are
+precisely zero things to do other than go to class and go home.
+- No interesting opportunities to do anything beyond classwork. The mere virtue of being at a
+name-brand four-year school meant I had access to researchers in interesting fields, companies visiting to recruit,
+active student clubs, special lectures from visiting professors, etc.
+- Almost no student aid/scholarships. Despite the higher tuition cost, I found that I got a lot more student financial aid at VCU.
+
+## Living with Family
+
+In my situation, tuition was mostly taken care of, which left room/board as my main expense. Where you could spend upwards of $20k/year on
+student housing and meal plans, my parents graciously allowed me to live at home and commute to school. This comes with some drawbacks:
+
+- Your school choice is narrowed to an extreme degree. While paying little or no rent saves a dragon's hoard of cash, you likely
+only will be within driving range of two or three schools at most - if any.
+- Commuting to school is not for everyone. I lived a roughly 40 minute drive from VCU, which turns each day at school into a marathon.
+- You can't put your living expenses on student loans - you need to have the cash for it on-hand.
+
+** FILL OUT POSITIVES **
 
 # Conclusion
 
